@@ -24,10 +24,12 @@ generate_dict:  builds a dictionary of common k-mers from a corpus
 
 -----------------------------
 Dependencies:
+
 	GCC 4.7 (or another C++11 compliant compiler)
 	BOOST Multiindex
 
 Quickstart:
+
 	make
 	./generate_dict MINCOUNT dict.db *.sam
 	./sparsify dict.db *.sam
@@ -35,6 +37,7 @@ Quickstart:
 
 We also provide a testsuite/ directory with example FASTQ files to
 demonstrate operation. To run the commented example script:
+
 	cd testsuite/
 	./run.sh
 -----------------------------
@@ -42,6 +45,7 @@ The three main programs are as follows.
 
 generate_dict:
 Usage: ./generate_dict MINCOUNT output_file input_file(s)
+
 	Counts the number of times 32-mers appear, and outputs it in a two column
 	format, with the first column specifying the 32-mer and the second column
 	the number of times it appears in the corpus.
@@ -49,6 +53,7 @@ Usage: ./generate_dict MINCOUNT output_file input_file(s)
 sparsify:
 Discards likely non-SNP quality scores for known reads.
 Usage: ./sparsify database_file input_file(s)
+
 	Input is assumed to be SAM file without headers. Because this program
 	only modifies column 11 if column 10 contains a valid read, however,
 	it may or may not work on SAM files with headers. This behaviour
@@ -75,6 +80,7 @@ Usage: ./sparsify database_file input_file(s)
 threshold:
 Changes the maximum quality value of '~' to 'Q'
 Usage: ./threshold 'Q' input_file(s)
+
 	Will output a modified SAM file named '[input_file].reduced' with all
 	instances of '~' in column 11 replaced with with character specified in
 	[Q].
