@@ -13,14 +13,15 @@ be actively maintained.
 -----------------------------
 Package contents:
 
-fastq2fsam.sh:  converts FASTQ files to a SAM-like format
-fsam2fastq.sh:  converts SAM-like files to FASTQ
+	fastq2fsam.sh:  converts FASTQ files to a SAM-like format
+	fsam2fastq.sh:  converts SAM-like files to FASTQ
 
 Following programs take input and output in SAM-like format:
-generate_dict:  builds a dictionary of common k-mers from a corpus
-     sparsify:  uses dictionary to smooth quality values for high confidence
-                calls as measured by k-mer Hamming distance.
-     theshold:  reduces all quality values to some cutoff Q
+
+	generate_dict:  builds a dictionary of common k-mers from a corpus
+		 sparsify:  uses dictionary to smooth quality values for high confidence
+					calls as measured by k-mer Hamming distance.
+		 theshold:  reduces all quality values to some cutoff Q
 
 -----------------------------
 Dependencies:
