@@ -4,6 +4,7 @@ This package naively implements the Read-Quality-Sparsifier described in:
 Y. William Yu, Deniz Yorukoglu, and Bonnie Berger. "Traversing the k-mer
 landscape of NGS read datasets for quality score sparsification." Research in
 Computational Molecular Biology, p385-399, 2014.
+http://rqs.csail.mit.edu/
 
 Note that the code described/implemented in this package is not scalable to
 full genome / large datasets due to high memory requirements. This package was
@@ -89,3 +90,5 @@ Usage: ./threshold 'Q' input_file(s)
 	In the previous example, the new quality values from the filtered SAM file
 	would then be "AIIIIIIH" if Q=I. 
 -----------------------------
+
+For more resources and larger test cases, see http://rqs.csail.mit.edu/
