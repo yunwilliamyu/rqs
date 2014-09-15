@@ -1,4 +1,4 @@
-/* Copyright (c) 2013 Y. William Yu. All rights reserved. */
+/* Copyright (c) 2013 Y. William Yu. Released under CC0 1.0 Universal */
 /* threshold.cpp
  * Changes quality values above [quality score] in a file to [quality score]
 */
